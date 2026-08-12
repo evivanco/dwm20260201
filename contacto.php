@@ -41,10 +41,8 @@
         </nav>       
         <!-- Container -->
         <div class="container-fluid bg-warning">
-            <a href="empresa.php">Ir a Empresa</a><br>
-            <a href="productos.php">Ir a Productos</a><br>
-            <a href="servicios.php">Ir a Servicios</a><br>
-            <a href="contacto.php">Ir a Contacto</a><br>
+            Hola Contacto<br>
+            <a href="index.php">Volver</a>
         </div>
         <!-- Footer -->   
         <div class="container-fluid bg-dark">

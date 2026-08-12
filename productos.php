@@ -19,9 +19,9 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Empresa</a>
+                            <a class="nav-link dropdown-toggle" href="empresa.php" role="button" data-bs-toggle="dropdown">Empresa</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="empresa.php">Quienes Somos</a></li>
+                                <li><a class="dropdown-item" href="#">Quienes Somos</a></li>
                                 <li><a class="dropdown-item" href="#">Nuestro Equipo</a></li>
                                 <li><a class="dropdown-item" href="#">Mision</a></li>
                             </ul>
@@ -41,10 +41,8 @@
         </nav>       
         <!-- Container -->
         <div class="container-fluid bg-warning">
-            <a href="empresa.php">Ir a Empresa</a><br>
-            <a href="productos.php">Ir a Productos</a><br>
-            <a href="servicios.php">Ir a Servicios</a><br>
-            <a href="contacto.php">Ir a Contacto</a><br>
+            Hola Productos<br>
+            <a href="index.php">Volver</a>
         </div>
         <!-- Footer -->   
         <div class="container-fluid bg-dark">
