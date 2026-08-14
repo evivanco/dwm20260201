@@ -35,9 +35,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.php">Contacto</a>
                         </li>  
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Acceder</button>
-                        </li>
                     </ul>
                 </div>                
             </div>
