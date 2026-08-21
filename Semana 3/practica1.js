@@ -1,50 +1,42 @@
-// GET https://mitienda.cl/api/productos
-// GET, POST, PUT, DELETE
+// respuestaAPI = apicall(); // GET https://algo.cl/api/productos
+
 const respuestaAPI = {
-	"status": 200,
-	"message": "Productos recolectados",
-	"data": [
-		{
-			"id": 1,
-			"nombre": "Teclado numerico",
-			"precio": 4500,
-			"stock": 12,
-			"categoria": "Periféricos",
-			"disponible": true
-		},
-		{
-			"id": 2,
-			"nombre": "Mouse inalámbrico",
-			"precio": 19900,
-			"stock": 0,
-			"categoria": "Periféricos",
-			"disponible": false
-		},
-		{
-			"id": 3,
-			"nombre": "Monitor 24 pulgadas",
-			"precio": 129900,
-			"stock": 5,
-			"categoria": "Monitores",
-			"disponible": true
-		}
-	]
+    "status": 200,
+    "message" : "Productos obtenidos correctamente",
+    "data": [
+        {
+            "id": 1,
+            "nombre": "Teclado",
+            "precio": 4590
+        },
+        {
+            "id": 2,
+            "nombre": "Mouse",
+            "precio": 6000
+        }
+    ]
 };
 
 respuestaAPI.data.forEach((producto) => {
     console.log(`${producto.nombre} - $${producto.precio}`);
-});
+})
 
-let variable = { "rut": "1-9"};  // null
-console.log(typeof(variable));
-let variable2 = 1/variable; // NaN
+let variable1 = null;
+console.log(typeof(variable1));
+variable1 = { "rut": "1-9"};
+console.log(typeof(variable1.rut));
+let variable2 = NaN;
+console.log(typeof(variable2));
+variable2 = 1/0;
+console.log(typeof(variable2)); console.log(variable2);
+variable2 = 1/variable1;
 console.log(typeof(variable2)); console.log(variable2);
 let variable3;
-console.log(typeof(variable3)); console.log(variable3 instanceof Object);
-
-try {
+console.log(typeof(variable3));
+console.log(variable3 instanceof Object)
+console.log(null instanceof Object);
+try { // Controlados Accepted, Reject, Except
     variable2 = variable2 + y;
-} catch (ex) {
-    console.log(`Error: ${ex}`);
+} catch (err) {
+    console.log(`Error ${err}`);
 }
-
