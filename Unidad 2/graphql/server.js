@@ -38,7 +38,7 @@ const resolvers = {
         },
         async getUsuariosById(obj, {id}){
             const usuarioBus = await Usuario.findById(id);
-            if(usuarioBus == null){
+            if (usuarioBus == null){
                 return null;
             } else {
                 return usuarioBus;
@@ -69,6 +69,7 @@ const corsOption = {
     origin: "http://localhost:8090",
     credentials: false
 };
+
 async function startServer(){
     apolloServer = new ApolloServer({typeDefs, resolvers, corsOption});
     await apolloServer.start();
@@ -80,5 +81,5 @@ startServer();
 const app = express();
 app.use(cors());
 app.listen(8090, function(){
-    console.log("Graphql Iniciado");
+    console.log("Graphql iniciado");
 });

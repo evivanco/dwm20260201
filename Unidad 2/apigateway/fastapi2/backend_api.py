@@ -1,17 +1,16 @@
 from fastapi import FastAPI
 
 app = FastAPI(
-    title="Backend API es",
-    description="API ubicada y enrutada por API gateway"
+    title = "Backend API español",
+    description = "API ubicada en el localhost enruta por API gateway /api/productos"
 )
 
-@app.get("/health")
-def health():
+@app.get("/salud")
+def salud():
     return {
-        "status": "OK",
+        "status": "OK", 
         "service": "Backend API"
     }
-
 @app.get("/productos")
 def productos():
     return {
@@ -20,12 +19,11 @@ def productos():
             {"id": 2, "nombre": "Monitor", "precio": 250000}
         ]
     }
-
 @app.get("/ordenes")
 def ordenes():
     return {
         "ordenes": [
-            {"id": 1001, "status": "paid"},
-            {"id": 1002, "status": "pending"}
+            {"id": 1001, "estado": "pagado"},
+            {"id": 1002, "estado": "pendiente" }
         ]
     }

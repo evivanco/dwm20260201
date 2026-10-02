@@ -14,7 +14,7 @@
     "apollo-server-express": "^3.13.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "graphql": "15",
+    "graphql": "15.10.1",
     "mongoose": "8.17.1"
   }
 }
